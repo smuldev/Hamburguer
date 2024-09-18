@@ -1,0 +1,14 @@
+<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="500" height="500">
+	<title>Novo Projeto</title>
+	<style>
+		.s0 { fill: #df991a } 
+		.s1 { fill: #faa916 } 
+		.s2 { fill: #000000;stroke: #000000;stroke-miterlimit:10 } 
+	</style>
+	<g id="Layer 1">
+		<path id="Forma 3 copy 2" fill-rule="evenodd" class="s0" d="m190.5 100.5h118c49.7 0 90 40.3 90 90v118c0 49.7-40.3 90-90 90h-118c-49.7 0-90-40.3-90-90v-118c0-49.7 40.3-90 90-90z"/>
+		<path id="Forma 3" fill-rule="evenodd" class="s1" d="m192.1 112.9l115.1 0.1c43.6 0 79 35.4 78.9 79.1l-0.1 115.1c0 43.6-35.4 79-79.1 78.9l-115.1-0.1c-43.6 0-79-35.4-78.9-79.1l0.1-115.1c0-43.6 35.4-79 79.1-78.9z"/>
+		<path id="Forma 2 copy 2" fill-rule="evenodd" class="s2" d="m250 160c6.6 0 12 5.4 12 12v156c0 6.6-5.4 12-12 12-6.6 0-12-5.4-12-12v-156c0-6.6 5.4-12 12-12z"/>
+		<path id="Forma 2 copy 3" fill-rule="evenodd" class="s2" d="m340 250c0 6.6-5.4 12-12 12h-156c-6.6 0-12-5.4-12-12 0-6.6 5.4-12 12-12h156c6.6 0 12 5.4 12 12z"/>
+	</g>
+</svg>

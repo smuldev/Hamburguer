@@ -1,0 +1,257 @@
+body {  
+  margin: 0;
+  padding: 0px;
+  box-sizing: border-box;
+  background-color: #1B1B1E;
+  @import url('https://fonts.googleapis.com/css2?family=K2D:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+  font-family: "Inter", sans-serif;
+}
+
+img {
+  width: 100px;
+  height: 75px;
+}
+
+nav {
+  display: flex;
+  margin-top: 24px;
+  justify-content: center;
+  align-items: center;
+}
+
+.cart {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 100px;
+  height: 75px;
+  border-radius: 19px;
+  background: #121212;
+  box-shadow: 0px 4px 10.4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.cart-logo {
+  width: 40px;
+}
+
+header {
+  display: flex;
+  position: relative;
+  z-index: 10;
+  justify-content: space-around;
+  align-items: center;
+  width: 1300px;
+  height: 75px;
+  font-size: 18px;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.507);
+  border-radius: 19px;
+  margin: 0px 55px;
+  padding: 0px 40px;
+  background-color: #3B3B429E;
+}
+
+header a:hover {
+  color: #ffffffc8;
+  cursor: pointer;
+}
+
+header a {
+  text-align: center;
+  width: 100px;
+  transition: all 0.1s ease-in-out;
+}
+
+.logo-dev {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 140px;
+  height: 85px;
+  border-radius: 21px;
+  margin: 0px 40px;
+  background: #232328;
+  box-shadow: 0px 4px 17.1px 0px rgba(0, 0, 0, 0.25);
+}
+
+.logo-dev img {
+  width: 100px;
+  height: 100px;
+}
+
+header div {
+  display: flex;
+  gap: 100px;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  margin: 0 auto;
+  margin-top: 80px;
+  width: 1000px;
+  height: 650px;
+}
+
+main div {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  border-radius: 30px;
+  width: 270px;
+  height: 270px;
+}
+
+section {
+  position: absolute;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  width: 1000px;
+  height: 650px;
+}
+
+section span {
+  position: relative;
+  z-index: 11;
+  text-align: center;
+  line-height: 7px;
+  border-radius: 20px;
+  box-shadow: 0px 4px 36.1px 2px rgba(0, 0, 0, 0);
+  width: 130px;
+  transform: translateY(210px) translateX(54px);
+  height: 75px;
+  color: #fffffff3;
+  background: #1B1B1E;
+}
+
+section h2 {
+  font-weight: 800;
+}
+
+main img {
+  position: absolute;
+  margin-bottom: 10px;
+  margin-right: 8px;
+  width: 100px;
+  z-index: 10;
+  filter: drop-shadow(0px 0px 5px rgba(0, 0, 0, 0.518));
+}
+
+.add:hover {
+  filter: drop-shadow(0px 0px 5px rgba(255, 183, 0, 0.518));
+}
+
+.add {
+  transition: all 0.1s ease-in-out;
+}
+
+section p {
+  opacity: 66%;
+  font-weight: 300;
+  font-size: 20px;
+}
+
+.cart-1 {
+  position: relative;
+  z-index: 10;
+  background: url(./img/bacon-egg.png) center;
+  box-shadow: inset 0px 0px 0px 10px rgba(217, 217, 217, 0.10);
+  background-size: cover;
+  background-clip: content-box;
+  margin: auto auto;
+}
+
+.cart-2 {
+  position: relative;
+  z-index: 10;
+  background: url(./img/monstruoso.png) center;
+  box-shadow: inset 0px 0px 0px 10px rgba(217, 217, 217, 0.10);
+  background-size: cover;
+  background-clip: content-box;
+  margin: auto auto;
+}
+.cart-3 {
+  position: relative;
+  z-index: 10;
+  background: url(./img/xsalada.jpeg) center ;
+  box-shadow: inset 0px 0px 0px 10px rgba(217, 217, 217, 0.10);
+  background-size: cover;
+  background-clip: content-box;
+  margin: auto auto;
+}
+.cart-4 {
+  position: relative;
+  z-index: 10;
+  background: url(./img/xbacon.png) center;
+  box-shadow: inset 0px 0px 0px 10px rgba(217, 217, 217, 0.10);
+  background-size: cover;
+  background-clip: content-box;
+  margin: auto auto;
+}
+.cart-5 {
+  position: relative;
+  z-index: 10;
+  background: url(./img/xvegan.png) center;
+  box-shadow: inset 0px 0px 0px 10px rgba(217, 217, 217, 0.10);
+  background-size: cover;
+  background-clip: content-box;
+  margin: auto auto;
+}
+.cart-6 {
+  position: relative;
+  z-index: 11;
+  background: url(./img/monstruoso-vegan.png) center;
+  box-shadow: inset 0px 0px 0px 10px rgba(217, 217, 217, 0.10);
+  background-size: cover;
+  background-clip: content-box;
+  margin: auto auto;
+}
+
+article div:hover {
+  opacity: 100%;
+}
+
+article {
+  position: absolute;
+  display: flex;
+  z-index: 1;
+  justify-content: center;
+  align-items: center;
+  top: 0px;
+  gap: 60%;
+  height: 100vh;
+  width: 100vw;
+}
+
+.ad1 {
+  margin-bottom: -85px;
+  border-radius: 10px;
+  z-index: 0;
+  opacity: 60%;
+  width: 250px;
+  height: 600px;
+  background: url(./img/ad1.jpg);
+  background-size: cover;
+  background-position: center;
+  background-clip: content-box;
+  filter: drop-shadow(0px 0px 10px #040404);
+  transition: opacity 0.3s;
+}
+
+.ad2 {
+  margin-bottom: -85px;
+  border-radius: 10px;
+  z-index: 0;
+  opacity: 60%;
+  width: 250px;
+  height: 600px;
+  background: url(./img/ad2.jpg);
+  background-size: cover;
+  background-position: center;
+  background-clip: content-box;
+  filter: drop-shadow(0px 0px 10px #040404);
+  transition: opacity 0.3s;
+}
