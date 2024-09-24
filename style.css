@@ -13,14 +13,18 @@ img {
   height: 75px;
 }
 
+
 nav {
   display: flex;
   margin-top: 24px;
   justify-content: center;
   align-items: center;
+  animation: fadetop 2s ease 0s 1 normal forwards;
 }
 
 .cart {
+  position: relative;
+  z-index: 12;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -28,12 +32,10 @@ nav {
   height: 75px;
   border-radius: 19px;
   background: #121212;
+  cursor: pointer;
   box-shadow: 0px 4px 10.4px 0px rgba(0, 0, 0, 0.25);
 }
 
-.cart-logo {
-  width: 40px;
-}
 
 header {
   display: flex;
@@ -91,37 +93,28 @@ main {
   grid-template-rows: 1fr 1fr;
   margin: 0 auto;
   margin-top: 80px;
-  width: 1000px;
+  width: 800px;
   height: 650px;
 }
 
 main div {
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
   align-items: flex-end;
   border-radius: 30px;
   width: 245px;
   height: 265px;
 }
 
-section {
-  position: absolute;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
-  width: 1000px;
-  height: 650px;
-}
-
-section span {
+span {
   position: relative;
-  z-index: 11;
+  z-index: 10;
   text-align: center;
   line-height: 7px;
   border-radius: 20px;
   box-shadow: 0px 4px 36.1px 2px rgba(0, 0, 0, 0);
   width: 130px;
-  transform: translateY(210px) translateX(54px);
+  margin-bottom: 17px;
   height: 75px;
   color: #fffffff3;
   background: #1B1B1E;
@@ -132,11 +125,13 @@ section h2 {
 }
 
 main img {
-  position: absolute;
-  margin-bottom: 10px;
-  margin-right: 8px;
-  width: 100px;
+  position: relative;
+  max-width: 70px;
+  max-height: 70px;
+  margin-left: 10px;
+  margin-bottom: 17px;
   z-index: 10;
+  cursor: pointer;
   filter: drop-shadow(0px 0px 5px rgba(0, 0, 0, 0.518));
 }
 
@@ -148,12 +143,6 @@ main img {
   transition: all 0.1s ease-in-out;
 }
 
-section p {
-  opacity: 66%;
-  font-weight: 300;
-  font-size: 20px;
-}
-
 .cart-1 {
   position: relative;
   z-index: 10;
@@ -162,6 +151,7 @@ section p {
   background-size: cover;
   background-clip: content-box;
   margin: auto auto;
+  animation: fadebottom 1s ease 0s 1 normal forwards;
 }
 
 .cart-2 {
@@ -172,6 +162,7 @@ section p {
   background-size: cover;
   background-clip: content-box;
   margin: auto auto;
+  animation: fadebottom 1s ease 0s 1 normal forwards;
 }
 .cart-3 {
   position: relative;
@@ -181,6 +172,7 @@ section p {
   background-size: cover;
   background-clip: content-box;
   margin: auto auto;
+  animation: fadebottom 1s ease 0s 1 normal forwards;
 }
 .cart-4 {
   position: relative;
@@ -190,6 +182,7 @@ section p {
   background-size: cover;
   background-clip: content-box;
   margin: auto auto;
+  animation: fadebottom 1s ease 0s 1 normal forwards;
 }
 .cart-5 {
   position: relative;
@@ -199,6 +192,7 @@ section p {
   background-size: cover;
   background-clip: content-box;
   margin: auto auto;
+  animation: fadebottom 1s ease 0s 1 normal forwards;
 }
 .cart-6 {
   position: relative;
@@ -208,10 +202,7 @@ section p {
   background-size: cover;
   background-clip: content-box;
   margin: auto auto;
-}
-
-article div:hover {
-  opacity: 100%;
+  animation: fadebottom 1s ease 0s 1 normal forwards;
 }
 
 article {
@@ -221,37 +212,54 @@ article {
   justify-content: center;
   align-items: center;
   top: 0px;
-  gap: 60%;
+  gap: 890px;
   height: 100vh;
   width: 100vw;
+  animation: fadebottom 2s ease 0s 1 normal forwards;
 }
 
 .ad1 {
   margin-bottom: -85px;
   border-radius: 10px;
   z-index: 0;
-  opacity: 60%;
   width: 250px;
   height: 600px;
-  background: url(./img/ad1.jpg);
-  background-size: cover;
-  background-position: center;
-  background-clip: content-box;
-  filter: drop-shadow(0px 0px 10px #040404);
-  transition: opacity 0.3s;
+  filter: drop-shadow(0px 0px 10px #0404042f);
+  background: #232328;
+  animation: fadebottom 2s ease 0s 1 normal forwards;
 }
 
 .ad2 {
   margin-bottom: -85px;
   border-radius: 10px;
   z-index: 0;
-  opacity: 60%;
   width: 250px;
   height: 600px;
-  background: url(./img/ad2.jpg);
-  background-size: cover;
-  background-position: center;
-  background-clip: content-box;
-  filter: drop-shadow(0px 0px 10px #040404);
-  transition: opacity 0.3s;
+  filter: drop-shadow(0px 0px 10px #0404042f);
+  background: #232328;
+  animation: fadebottom 2s ease 0s 1 normal forwards;
+}
+
+@keyframes fadebottom {
+	0% {
+		opacity: 0;
+		transform: translateY(50px);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+@keyframes fadetop {
+	0% {
+		opacity: 0;
+		transform: translateY(-50px);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateY(0);
+	}
 }

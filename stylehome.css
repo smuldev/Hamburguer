@@ -1,0 +1,149 @@
+body {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  max-width: 100vw;
+  max-height: 100vh;
+  box-sizing: border-box;
+  background-image: linear-gradient(172deg, #b8b8cb -110%, #1b1b1e 22%);
+  @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+  font-family: "Inter", sans-serif;
+  color: snow;
+  overflow: hidden;
+}
+
+main {
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 100px;
+  width: 50vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+h1 {
+  font-weight: 800;
+  margin-top: 40px;
+  margin-bottom: 10px;
+  font-size: 5vw;
+  line-height: 120px;
+}
+
+img {
+  margin-top: -100px;
+}
+
+.burg {
+  overflow: hidden;
+  animation: pulse 7s ease 0s infinite normal forwards;
+}
+
+.triangle {
+  animation: pulse-triangle 6s ease 0s infinite normal forwards;
+  margin-right: -440px;
+  margin-bottom: -100px;
+  overflow: hidden;
+}
+
+@keyframes pulse {
+	0% {
+		transform: scale(1) rotate(0deg);
+	}
+
+	50% {
+		transform: scale(1.2) rotate(5deg);
+	}
+
+	100% {
+		transform: scale(1) rotate(0deg);
+	}
+}
+
+@keyframes pulse-triangle {
+	0% {
+		transform: scale(1);
+	}
+
+	50% {
+		transform: scale(1.1);
+	}
+
+	100% {
+		transform: scale(1);
+	}
+}
+
+p {
+  transform: translateX(10px);
+  font-weight: 200;
+}
+
+button {
+  cursor: pointer;
+  width: 400px;
+  height: 90px;
+  color: snow;
+  font-family: "Days One", sans-serif;
+  font-size: 35px;
+  border-radius: 17px;
+  border: solid 1px rgba(255, 255, 255, 0.1);
+  background: rgb(46,46,55);
+  background: linear-gradient(90deg, rgba(46,46,55,1) 0%, rgba(32,32,36,1) 100%);
+  transition: 0.1s ease-in-out;
+}
+
+button:hover {
+  opacity: 80%;
+  font-size: 35.5px;
+  border: solid 3px rgba(255, 255, 255, 0.1);
+}
+
+span {
+  font-weight: 200;
+}
+
+div {
+  width: 400px;
+  margin-top: 120px;
+}
+
+h3 {
+  font-weight: 600;
+  text-align: center;
+}
+
+.logo {
+  width: 10%;
+}
+
+section {
+  width: 50vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  margin-top: 30px;
+  justify-content: center;
+  overflow: hidden;
+}
+
+section img {
+  position: absolute;
+}
+
+.instagram {
+  width: 25px;
+  margin-bottom: 24px;
+  cursor: pointer;
+}
+
+.whatsapp {
+  width: 25px;
+  margin-bottom: 24px;
+  cursor: pointer;
+}
+
+a {
+  color: snow;
+  text-decoration: none;
+}
