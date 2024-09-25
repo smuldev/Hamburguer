@@ -87,7 +87,7 @@ header div {
   gap: 100px;
 }
 
-main {
+ul {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr;
@@ -97,24 +97,36 @@ main {
   height: 650px;
 }
 
-main div {
+li {
   display: flex;
-  justify-content: center;
-  align-items: flex-end;
+  flex-direction: row;
+  width: 900px;
   border-radius: 30px;
   width: 245px;
   height: 265px;
+  margin: auto auto;
+  animation: fadebottom 1s ease 0s 1 normal forwards;
+}
+
+li img {
+  border-radius: 20px;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 30;
 }
 
 span {
+  display: block;
+  margin: 180px 10px;
   position: relative;
   z-index: 10;
   text-align: center;
   line-height: 7px;
   border-radius: 20px;
+  bottom: 0px;
   box-shadow: 0px 4px 36.1px 2px rgba(0, 0, 0, 0);
   width: 130px;
-  margin-bottom: 17px;
   height: 75px;
   color: #fffffff3;
   background: #1B1B1E;
@@ -124,91 +136,22 @@ section h2 {
   font-weight: 800;
 }
 
-main img {
-  position: relative;
-  max-width: 70px;
-  max-height: 70px;
-  margin-left: 10px;
-  margin-bottom: 17px;
-  z-index: 10;
-  cursor: pointer;
-  filter: drop-shadow(0px 0px 5px rgba(0, 0, 0, 0.518));
-}
-
 .add:hover {
   filter: drop-shadow(0px 0px 5px rgba(255, 183, 0, 0.518));
 }
 
 .add {
+  height: 70px;
+  width: 70px;
+  right: 17px;
+  bottom: 10px;
   transition: all 0.1s ease-in-out;
-}
-
-.cart-1 {
-  position: relative;
-  z-index: 10;
-  background: url(./img/bacon-egg.png) center;
-  box-shadow: inset 0px 0px 0px 10px rgba(217, 217, 217, 0.10);
-  background-size: cover;
-  background-clip: content-box;
-  margin: auto auto;
-  animation: fadebottom 1s ease 0s 1 normal forwards;
-}
-
-.cart-2 {
-  position: relative;
-  z-index: 10;
-  background: url(./img/monstruoso.png) center;
-  box-shadow: inset 0px 0px 0px 10px rgba(217, 217, 217, 0.10);
-  background-size: cover;
-  background-clip: content-box;
-  margin: auto auto;
-  animation: fadebottom 1s ease 0s 1 normal forwards;
-}
-.cart-3 {
-  position: relative;
-  z-index: 10;
-  background: url(./img/xsalada.jpeg) center ;
-  box-shadow: inset 0px 0px 0px 10px rgba(217, 217, 217, 0.10);
-  background-size: cover;
-  background-clip: content-box;
-  margin: auto auto;
-  animation: fadebottom 1s ease 0s 1 normal forwards;
-}
-.cart-4 {
-  position: relative;
-  z-index: 10;
-  background: url(./img/xbacon.png) center;
-  box-shadow: inset 0px 0px 0px 10px rgba(217, 217, 217, 0.10);
-  background-size: cover;
-  background-clip: content-box;
-  margin: auto auto;
-  animation: fadebottom 1s ease 0s 1 normal forwards;
-}
-.cart-5 {
-  position: relative;
-  z-index: 10;
-  background: url(./img/xvegan.png) center;
-  box-shadow: inset 0px 0px 0px 10px rgba(217, 217, 217, 0.10);
-  background-size: cover;
-  background-clip: content-box;
-  margin: auto auto;
-  animation: fadebottom 1s ease 0s 1 normal forwards;
-}
-.cart-6 {
-  position: relative;
-  z-index: 11;
-  background: url(./img/monstruoso-vegan.png) center;
-  box-shadow: inset 0px 0px 0px 10px rgba(217, 217, 217, 0.10);
-  background-size: cover;
-  background-clip: content-box;
-  margin: auto auto;
-  animation: fadebottom 1s ease 0s 1 normal forwards;
 }
 
 article {
   position: absolute;
   display: flex;
-  z-index: 1;
+  z-index: 0;
   justify-content: center;
   align-items: center;
   top: 0px;
