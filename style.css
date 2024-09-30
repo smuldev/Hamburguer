@@ -116,6 +116,7 @@ li img {
   opacity: 30;
 }
 
+
 span {
   display: block;
   margin: 180px 10px;
@@ -136,16 +137,29 @@ section h2 {
   font-weight: 800;
 }
 
-.add:hover {
-  filter: drop-shadow(0px 0px 5px rgba(255, 183, 0, 0.518));
-}
-
 .add {
   height: 70px;
   width: 70px;
   right: 17px;
   bottom: 10px;
   transition: all 0.1s ease-in-out;
+  cursor: pointer;
+}
+.add:hover {
+  filter: drop-shadow(0px 0px 5px rgba(255, 183, 0, 0.518));
+}
+
+
+.delete {
+  width: 70px;
+  height: 70px;
+  right: 17px;
+  bottom: 10px;
+  cursor: pointer;
+  display: none;
+}
+.delete:hover {
+  filter: drop-shadow(0px 0px 5px rgba(255, 0, 0, 0.518));
 }
 
 article {
@@ -161,15 +175,26 @@ article {
   animation: fadebottom 2s ease 0s 1 normal forwards;
 }
 
-.ad1 {
+.cart-value {
   margin-bottom: -85px;
   border-radius: 10px;
   z-index: 0;
   width: 250px;
-  height: 600px;
-  filter: drop-shadow(0px 0px 10px #0404042f);
+  height: 100px;
   background: #232328;
   animation: fadebottom 2s ease 0s 1 normal forwards;
+  color: rgba(255, 250, 250, 0.416);
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 5px;
+  padding-left: 20px;
+}
+
+.valor {
+  font-size: 35px;
+  font-weight: 800;
+  letter-spacing: 2px;
+  color: rgba(255, 250, 250, 0.888);
 }
 
 .ad2 {

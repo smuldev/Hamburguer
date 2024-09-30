@@ -11,14 +11,16 @@
       href="https://fonts.googleapis.com/css2?family=Days+One&display=swap"
       rel="stylesheet"
     />
+    
   </head>
   <body>
 
    
 
     <article>
-      <div class="ad1">
-        <h1></h1>
+      <div class="cart-value">
+        <p>TOTAL:</p>
+        <p class="valor">R$0,00</p>
       </div>
       <div class="ad2"></div>
     </article>
@@ -26,8 +28,8 @@
       <img class="burg-logo" src="./img/Logo.svg" alt="Logo" />
       <header>
         <div class="left">
-          <a onclick="show()" class="cupom">LANCHES</a>
-          <a>VEGANOS</a>
+          <a onclick="showBurgs()" class="cupom">LANCHES</a>
+          <a onclick="discount()">CUPONS</a>
         </div>
 
         <div class="logo-dev">
@@ -35,11 +37,11 @@
         </div>
 
         <div class="right">
-          <a>CUPONS</a>
+          <a onclick="veganize()">VEGANOS</a>
           <a>CONTATO</a>
         </div>
       </header>
-      <div class="cart">
+      <div onclick="totalValue()" class="cart">
         <svg
           class="cart-logo"
           width="40"
@@ -64,7 +66,8 @@
           <p>X-EGG</p>
           <h2>R$20,90</h2>
         </span>
-        <img class="add" src="./img/add.svg" alt="">
+        <img class="add" src="./img/delete.svg" alt="">
+        <img class="delete" src="./img/delete.svg" id="x-egg" alt="">
       </li>
 
       <li>
@@ -74,6 +77,7 @@
           <h2>R$28,90</h2>
         </span>
         <img class="add" src="./img/add.svg" alt="">
+        <img class="delete" src="./img/delete.svg" id="monstro" alt="">
       </li>
 
       <li>
@@ -83,6 +87,7 @@
           <h2>R$16,90</h2>
         </span>
         <img class="add" src="./img/add.svg" alt="">
+        <img class="delete" src="./img/delete.svg" id="x-salada" alt="">
       </li>
 
       <li>
@@ -92,6 +97,7 @@
           <h2>R$24,90</h2>
         </span>
         <img class="add" src="./img/add.svg" alt="">
+        <img class="delete" src="./img/delete.svg" id="x-bacon" alt="">
       </li>
 
       <li>
@@ -101,6 +107,7 @@
           <h2>R$18,90</h2>
         </span>
         <img class="add" src="./img/add.svg" alt="">
+        <img class="delete" src="./img/delete.svg" id="x-vegan" alt="">
       </li>
 
       <li>
@@ -109,7 +116,8 @@
           <p>X-NUGGET</p>
           <h2>R$26,90</h2>
         </span>
-        <img class="add" src="./img/add.svg" alt="">
+        <img class="add" onclick="changeIcon()" src="./img/add.svg" alt="">
+        <img class="delete" src="./img/delete.svg" id="x-nugget" alt="">
       </li>
     </ul>
 
